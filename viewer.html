@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Viewer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="viewer"></div>
+        <div id="controls">
+            <div id="info">
+                マウス左ドラッグ: 回転<br>
+                マウス右ドラッグ: パン<br>
+                ホイール: ズーム
+            </div>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./lib/three.js/three.webgpu.min.js",
+                "three/webgpu": "./lib/three.js/three.webgpu.min.js",
+                "three/tsl": "./lib/three.js/three.tsl.min.js",
+                "three/addons/": "./lib/three.js/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

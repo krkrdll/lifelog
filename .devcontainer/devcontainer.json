@@ -1,0 +1,22 @@
+{
+  "name": "lifelog",
+  "image": "mcr.microsoft.com/devcontainers/jekyll",
+  "features": {
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+  "runArgs": [
+    "--name",
+    "${localWorkspaceFolderBasename}"
+  ],
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "TZ": "Asia/Tokyo"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+      ]
+    }
+  }
+}
